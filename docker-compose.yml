@@ -12,7 +12,7 @@ services:
       - "${DOCKER_WEB_VOLUME:-./public:/app/public}"
     ports:
       - 80:80
-  db:
+  init:
     build:
       context: "."
       dockerfile: .dockerfile
